@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) Jyxon, Inc. All rights reserved.
+ * Copyright (C) GrizzIT, Inc. All rights reserved.
  * See LICENSE for license details.
  */
 namespace Ulrack\Codec\Component;
@@ -60,7 +60,7 @@ class JsonCodec implements EncoderInterface, DecoderInterface
             $this->encodeOptions,
             $this->depth
         );
-        
+
         if (json_last_error() !== JSON_ERROR_NONE) {
             throw new EncodingException(
                 json_last_error_msg(),

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) Jyxon, Inc. All rights reserved.
+ * Copyright (C) GrizzIT, Inc. All rights reserved.
  * See LICENSE for license details.
  */
 namespace Ulrack\Codec\Component;
@@ -18,13 +18,13 @@ class YamlCodec implements EncoderInterface, DecoderInterface
 
     /** @var int */
     private $linebreak;
-    
+
     /** @var callable[] */
     private $encodeCallbacks;
-    
+
     /** @var int */
     private $decodePosition;
-    
+
     /** @var callable[] */
     private $decodeCallbacks;
 
@@ -83,7 +83,7 @@ class YamlCodec implements EncoderInterface, DecoderInterface
     public function decode($input)
     {
         $nDocs = 0;
-        
+
         try {
             $output = yaml_parse(
                 $input,
@@ -98,7 +98,7 @@ class YamlCodec implements EncoderInterface, DecoderInterface
                 $exception
             );
         }
-        
+
 
         $this->nDocs = $nDocs;
 
