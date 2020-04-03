@@ -1,3 +1,5 @@
+# DEPRECATION NOTICE: this package has been moved an improved at [grizz-it/codec](https://github.com/grizz-it/codec)
+
 [![Build Status](https://travis-ci.com/ulrack/codec.svg?branch=master)](https://travis-ci.com/ulrack/codec)
 
 # Ulrack Codec
